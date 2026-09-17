@@ -1,6 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://bw06iqwoqo63i"]
+[gd_scene format=3 uid="uid://bw06iqwoqo63i"]
 
-[ext_resource type="Script" path="res://main.gd" id="1_svvy7"]
+[ext_resource type="Script" uid="uid://gfd7jx7n8hhv" path="res://main.gd" id="1_svvy7"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_yem70"]
 
@@ -17,16 +17,16 @@ albedo_color = Color(0.568627, 0, 0, 1)
 
 [sub_resource type="Environment" id="Environment_ig7tw"]
 
-[node name="Main" type="Node3D"]
+[node name="Main" type="Node3D" unique_id=1097484624]
 script = ExtResource("1_svvy7")
 
-[node name="XROrigin3D" type="XROrigin3D" parent="."]
+[node name="XROrigin3D" type="XROrigin3D" parent="." unique_id=1765541278]
 
-[node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D"]
+[node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D" unique_id=442236077]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2014249119]
 
-[node name="Button" type="Button" parent="CanvasLayer"]
+[node name="Button" type="Button" parent="CanvasLayer" unique_id=1014804161]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
@@ -37,7 +37,7 @@ offset_bottom = 116.0
 grow_horizontal = 2
 text = "Start AR"
 
-[node name="ScreenshotButton" type="Button" parent="CanvasLayer"]
+[node name="ScreenshotButton" type="Button" parent="CanvasLayer" unique_id=729282536]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
@@ -48,14 +48,14 @@ offset_bottom = 108.0
 grow_horizontal = 2
 text = "Screenshot"
 
-[node name="ShowScreenshotButton" type="Button" parent="CanvasLayer"]
+[node name="ShowScreenshotButton" type="Button" parent="CanvasLayer" unique_id=1007857303]
 offset_left = 849.0
 offset_top = 27.0
 offset_right = 989.0
 offset_bottom = 102.0
 text = "Show screenshot"
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=471618887]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -63,27 +63,27 @@ offset_top = 120.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=100157416]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.46891, 0, -4.96386)
 mesh = SubResource("BoxMesh_yem70")
 surface_material_override/0 = SubResource("StandardMaterial3D_082p1")
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=1673856283]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.531091, 0, -4.96386)
 mesh = SubResource("BoxMesh_yem70")
 surface_material_override/0 = SubResource("StandardMaterial3D_332a1")
 
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="." unique_id=442737751]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.468909, 0, -4.96386)
 mesh = SubResource("BoxMesh_yem70")
 surface_material_override/0 = SubResource("StandardMaterial3D_efu35")
 
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="." unique_id=1042841272]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.53109, 0, -4.96386)
 mesh = SubResource("BoxMesh_yem70")
 surface_material_override/0 = SubResource("StandardMaterial3D_nso1l")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1291466736]
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1598689445]
 environment = SubResource("Environment_ig7tw")
